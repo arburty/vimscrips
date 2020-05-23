@@ -8,9 +8,6 @@
 
 function Default_folded() " {1
     hi Folded term=standout cterm=italic ctermfg=14 ctermbg=236 gui=italic guifg=#a0a8b0 guibg=#384048
-    hi LineNr term=bold cterm=NONE ctermfg=Cyan ctermbg=NONE gui=NONE guifg=Cyan guibg=NONE
-    let short = LineNrBelow ctermbg=NONE guifg=Green
-    hi $short
 endfunction " }1
 
 function Default_linecolors() "{1

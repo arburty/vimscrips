@@ -18,7 +18,8 @@ function Default_linecolors() "{1
 endfunction
 " }1
 
-function Pickscheme(scheme) " {
+function Pickscheme(scheme = 'pop-punk') " {
+
     if a:scheme == 'badwolf' " {
         let g:badwolf_tabline=3
         colorscheme badwolf
@@ -83,6 +84,10 @@ function Pickscheme(scheme) " {
 
     elseif a:scheme == 'pop-punk' " {
         colorscheme pop-punk
+        " a softer Visual Select. Defualt bright white
+        hi Visual ctermfg=148 ctermbg=240 guifg=#afdf00 guibg=#585858
+        " a red highlight
+        hi IncSearch ctermfg=15 ctermbg=161 guifg=#ffffff guibg=#d70061
         call Default_folded()
         " }
 
@@ -93,6 +98,7 @@ function Pickscheme(scheme) " {
         echom "  gruvbox-material"
         echom "  jellybeans"
         echom "  pencil"
+        echom "  pop-punk"
         echom "  seoul256"
         echom "  space-vim-dark"
         " }

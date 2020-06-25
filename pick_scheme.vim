@@ -18,7 +18,7 @@ function Default_linecolors() "{1
 endfunction
 " }1
 
-function Pickscheme(scheme = 'pop-punk') " {
+function! Pickscheme(scheme) " {
 
     if a:scheme == 'badwolf' " {
         let g:badwolf_tabline=3

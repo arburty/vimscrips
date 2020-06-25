@@ -6,7 +6,6 @@
 " Made by following along with 'Learn Vimscript the Hard Way' chapters 32-34
 " https://learnvimscriptthehardway.stevelosh.com/chapters/33.html
 
-echom "grep-operator"
 nnoremap <leader>G :set operatorfunc=<SID>GrepOperator<cr>g@
 vnoremap <leader>G :<c-u>call <SID>GrepOperator(visualmode())<cr>
 

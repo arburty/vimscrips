@@ -90,6 +90,21 @@ function! Pickscheme(scheme) " {
         hi IncSearch ctermfg=15 ctermbg=161 guifg=#ffffff guibg=#d70061
         call Default_folded()
         " }
+        
+    elseif a:scheme == 'embark' " {
+        colorscheme embark
+        "call Default_folded()
+        
+    " made for color blindness.  Nice code colors
+    " Needs new comment colors though
+    elseif a:scheme == 'dalton' " {
+        colorscheme dalton
+        call Default_folded()
+        call Default_linecolors()
+
+    elseif a:scheme == 'challenger_deep' " {
+        colorscheme challenger_deep
+        call Default_folded()
 
     elseif a:scheme == '?' " {
         echom "Available schemes are:"
@@ -101,6 +116,9 @@ function! Pickscheme(scheme) " {
         echom "  pop-punk"
         echom "  seoul256"
         echom "  space-vim-dark"
+        echom "  challenger_deep"
+        echom "  embark"
+        echom "  dalton"
         " }
 
     else

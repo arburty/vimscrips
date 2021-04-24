@@ -7,7 +7,7 @@
 " }
 
 function Default_folded() " {1
-    hi Folded term=standout cterm=italic ctermfg=14 ctermbg=236 gui=italic guifg=#a0a8b0 guibg=#384048
+    hi Folded term=standout cterm=italic ctermfg=White ctermbg=236 gui=italic guifg=#a0a8b0 guibg=#384048
 endfunction " }1
 
 function Default_linecolors() "{1
@@ -97,6 +97,7 @@ function! Pickscheme(scheme) " {
         
     " made for color blindness.  Nice code colors
     " Needs new comment colors though
+
     elseif a:scheme == 'dalton' " {
         colorscheme dalton
         call Default_folded()
@@ -112,6 +113,11 @@ function! Pickscheme(scheme) " {
         call Default_folded()
         hi Comment cterm=italic
 
+    elseif a:scheme == 'elly' " {
+        colorscheme elly
+        call Default_folded()
+>>>>>>> Stashed changes
+
     elseif a:scheme == '?' " {
         echom "Available schemes are:"
         echom "  ayu"
@@ -126,6 +132,7 @@ function! Pickscheme(scheme) " {
         echom "  embark"
         echom "  dalton"
         echom "  spaceduck"
+        echom "  elly"
         " }
 
     else

@@ -106,6 +106,12 @@ function! Pickscheme(scheme) " {
         colorscheme challenger_deep
         call Default_folded()
 
+    elseif a:scheme == 'spaceduck' " {
+        colorscheme spaceduck
+        call Default_linecolors()
+        call Default_folded()
+        hi Comment cterm=italic
+
     elseif a:scheme == '?' " {
         echom "Available schemes are:"
         echom "  ayu"
@@ -119,6 +125,7 @@ function! Pickscheme(scheme) " {
         echom "  challenger_deep"
         echom "  embark"
         echom "  dalton"
+        echom "  spaceduck"
         " }
 
     else

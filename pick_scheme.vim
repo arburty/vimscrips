@@ -116,7 +116,6 @@ function! Pickscheme(scheme) " {
     elseif a:scheme == 'elly' " {
         colorscheme elly
         call Default_folded()
->>>>>>> Stashed changes
 
     elseif a:scheme == '?' " {
         echom "Available schemes are:"
@@ -139,7 +138,7 @@ function! Pickscheme(scheme) " {
         echom a:scheme . " is not a pre-defined scheme"
     endif
 endfunction
-" }
+" }1
 
 " My old colorscheme solarized8_dark_high had a lot of color fixes. {1
 " These are the remnants of those changes.
